@@ -127,6 +127,6 @@ namespace HBAcademyBuoiIV
             min = ((a < b) && (a < c)) ? $"max{a}" :"";
 
 
-        }
+        }s
     }
 }
