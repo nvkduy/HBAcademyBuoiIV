@@ -13,7 +13,7 @@ namespace HBAcademyBuoiIV
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.InputEncoding = Encoding.UTF8;
-            HBAcademyBuoiIV.Bai1.Y5();
+            HBAcademyBuoiIV.BTVNB4Record.Y1();
             Console.ReadKey();
 
 

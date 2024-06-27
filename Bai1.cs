@@ -115,18 +115,57 @@ namespace HBAcademyBuoiIV
         }
         public static void Y5()
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.InputEncoding = Encoding.UTF8;
             Console.Write("Nhập a:");
             int a = int.Parse(Console.ReadLine());
             Console.Write("Nhập b:");
             int b = int.Parse(Console.ReadLine());
-            Console.Write("Nhập b:");
+            Console.Write("Nhập c:");
             int c = int.Parse(Console.ReadLine());
-            object max;
-            max = ((a > b) && (a > c)) ? $"Max" :"" ;
-            object min;
-            min = ((a < b) && (a < c)) ? $"max{a}" :"";
+            if (a >= b && a >= c)
+            {
+                Console.WriteLine("Max là:" + a);
+                if (b >= c)
+                {
+                    Console.WriteLine("Min là:"+c);
+                }
+                else if(c >= b)
+                {
+                    Console.WriteLine("Min là:"+b);
+                }
+            }
+            else if (b >= a && b >= c)
+            {
+                Console.WriteLine("Max là:" + b);
+                if (a >= c)
+                {
+                    Console.WriteLine("Min là" + c);
+                }
+                else if (c >= a)
+                {
+                    Console.WriteLine("Min là"+a);
+                }
+            }
+            else if (c >= a && c >= b)
+            {
+                Console.WriteLine("Max là:" + c);
+                if (a >= b)
+                {
+                    Console.WriteLine ("Min là:"+b);
+                }
+                else if (b >= a)
+                {
+                    Console.WriteLine("Min là:" + a);
+                }
+                
+            }
+
+            
+
+            
 
 
-        }s
+        }
     }
 }
